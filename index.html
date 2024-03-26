@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="bannerImage">
+            <div class="imageBox ">
+                <img src="elderly.png" alt="bannerImage" class="imgBanner">
+            </div>
+        </div>
+        <div class="bannerText">
+            <div class="bannerTextDiv">
+                <p class="bannerTitle">ELDERLY</p>
+                <p class="bannerSlogan">( Connecting The elderly with their childrens ) </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .banner{
+        width:100vw;
+        display: flex;
+        justify-content: center;
+    
+        background-color:#8CC3EB;
+        flex-wrap: wrap;
+
+    }
+    .border{
+         border: 1px solid black;
+    }
+    
+    .bannerImage{
+        width:90vmin;
+        display: flex; justify-content: center;
+        align-items: center;
+    }
+    @media(max-width:900px){  /* Small Screen (Mobile) */
+        .bannerText{
+        width:90vmin; 
+        display: flex; justify-content: center; 
+        margin-top: 10vmin;
+        
+    }
+    .bannerTitle{
+        font-weight: bold;
+        font-size: 11vmin;
+    }
+    .bannerSlogan{
+        font-size: 3.5vmin;
+    }
+}
+@media(min-width:1280px){  /* Small Screen (Macbook Laptops) */
+    .bannerText{
+        width:70vmin;
+        display: flex; 
+        margin-top: 10vmin;
+        
+    }
+    .bannerImage{
+        width: 70vmin;
+    }
+    .bannerTextDiv{
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+    }
+    .bannerTitle{
+        font-weight: bold;
+        font-size: 8vmin;
+    }
+    .bannerSlogan{
+        font-size: 3.5vmin;
+    }
+}
+@media(min-width:901px)and(max-width:1279px){
+    .bannerText{   /*Small Laptops*/
+        width:90vmin;
+        display: flex; 
+        margin-top: 10vmin;
+        
+    }
+    .bannerTextDiv{
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+    }
+    .bannerTitle{
+        font-weight: bold;
+        font-size: 8vmin;
+    }
+    .bannerSlogan{
+        font-size: 3.5vmin;
+    }
+}
+    .imageBox{
+        width:70vmin;
+        height: 55vmin;
+    }
+    .imgBanner{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+    .bannerTextDiv{
+        height:25vmin;
+        width:70vmin;
+        color: white;
+    }
+@media(min-width:1600px){
+    .bannerText{
+        width:70vmin;   /*Large Screens*/
+        display: flex; 
+        margin-top: 10vmin;
+        
+    }
+    .bannerImage{
+        width:70vmin;
+        display: flex; 
+        margin-top: 10vmin;
+        
+    }
+    .bannerTextDiv{
+        margin-top: 5vmin;
+    }
+    .bannerSlogan{
+        margin-top: 1vmin;
+    }
+}
+</style>
