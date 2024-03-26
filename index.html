@@ -46,8 +46,45 @@
         display: flex; justify-content: center;
         align-items: center;
     }
-    @media(max-width:900px){  /* Small Screen (Mobile) */
-        .bannerText{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*New Code*/
+/*Small Device*/
+@media(max-width:700px){
+    .banner{
+        width:100vw;
+        display: flex;
+        justify-content: center;
+    
+        background-color:#8CC3EB;
+        flex-wrap: wrap;
+        padding-bottom: 3vmin;
+
+    }
+    .bannerText{
         width:90vmin; 
         display: flex; justify-content: center; 
         margin-top: 10vmin;
@@ -56,57 +93,91 @@
     .bannerTitle{
         font-weight: bold;
         font-size: 11vmin;
+        color: white;
     }
     .bannerSlogan{
-        font-size: 3.5vmin;
+        font-size: 4vmin;
+        color: white;
     }
+   
 }
-@media(min-width:1280px){  /* Small Screen (Macbook Laptops) */
-    .bannerText{
-        width:70vmin;
-        display: flex; 
+/*Tab Screens*/
+@media(min-width:701px) and (max-width:900px){
+    .banner{
+        width:100vw;
+        display: flex;
+        justify-content: center;
+    
+        background-color:#8CC3EB;
+        flex-wrap: wrap;
+        padding-bottom: 3vmin;
+
+    }
+  .bannerText{
+        width:90vmin; 
+        display: flex; justify-content: center; 
         margin-top: 10vmin;
         
     }
+    .bannerTitle{
+        font-weight: bold;
+        font-size: 9vmin;
+        color: white;
+    }
+    .bannerSlogan{
+        color: white;
+        font-size: 3.5vmin;
+    }
+}
+/*---- End for mobile and tab screens ---*/
+
+/*--- For Mini and medium Laptops(13.5eg: macbook-air) */
+@media(min-width:901px) and (max-width:1280px) {
+   
+    @media(max-height:770px) {
+              /*For Lenovo Thinkpad(small X390)*/
     .bannerImage{
-        width: 70vmin;
-    }
-    .bannerTextDiv{
-        display: flex;
-        flex-direction: column;
-         justify-content: center;
+        width: 85vmin;
+     }
+    .bannerText{
+        width: 85vmin;
     }
     .bannerTitle{
         font-weight: bold;
-        font-size: 8vmin;
+        font-size: 9vmin;
+        color: white;
     }
     .bannerSlogan{
+        color: white;
         font-size: 3.5vmin;
     }
-}
-@media(min-width:901px)and(max-width:1279px){
-    .bannerText{   /*Small Laptops*/
-        width:90vmin;
-        display: flex; 
-        margin-top: 10vmin;
-        
+      
     }
-    .bannerTextDiv{
-        display: flex;
-        flex-direction: column;
-         justify-content: center;
-    }
-    .bannerTitle{
-        font-weight: bold;
-        font-size: 8vmin;
-    }
-    .bannerSlogan{
-        font-size: 3.5vmin;
+    @media(min-height:771px) {
+          /*For macbook(13.5 inch screen)*/
+     
     }
 }
+/*For macbook(13.5inch eg:macbook-air)*/
+/*--- For Mini and medium Laptops(14inch eg: macbook-air) */
+@media(min-width:1281px) and (max-width:1440px){
+   
+    .bannerImage{
+        width: 80vmin;
+    }
+    .bannerText{
+        width: 80vmin;
+    }
     .imageBox{
-        width:70vmin;
+        width:90vmin;
         height: 55vmin;
+    }
+    .bannerTitle{
+        font-weight: bold;
+        font-size: 8vmin;
+    }
+    .bannerSlogan{
+        font-size: 3.5vmin;
     }
     .imgBanner{
         max-width: 100%;
@@ -116,26 +187,36 @@
     .bannerTextDiv{
         height:25vmin;
         width:70vmin;
+        margin-top: 15vmin;
         color: white;
     }
-@media(min-width:1600px){
-    .bannerText{
-        width:70vmin;   /*Large Screens*/
-        display: flex; 
-        margin-top: 10vmin;
-        
-    }
-    .bannerImage{
-        width:70vmin;
-        display: flex; 
-        margin-top: 10vmin;
-        
-    }
-    .bannerTextDiv{
-        margin-top: 5vmin;
-    }
-    .bannerSlogan{
-        margin-top: 1vmin;
-    }
+
+
 }
+
+/*-----End for macbook-air sized laptops(14 inch) ----*/
+
+/*--- For Large laptop screens(15.6inch)(Ex:- HP-Omen)---*/
+@media(min-width:1441px) and (max-width:1727px){
+  
+}
+/*--- End of Large Screen code ---*/
+/*--- For Very Large laptop screens (Ex:- Large Dell Latitude Screens,Macbook Pro)---*/
+@media(min-width:1728px) and (max-width:2047px){
+}
+/*--- For XX Large screens (Ex:- TVs,IMacs...)---*/
+@media(min-width:2048px){
+    
+   
+}
+   
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+
+
+
 </style>
